@@ -1,0 +1,256 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 16px;
+    background-image:url(bg1.jpg);
+    color:black;
+    height: 1223px;
+    
+}
+
+.topbar{
+    background-color: #ff2442;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    height: 20px;
+    width: 100%;
+    z-index: 1;
+    opacity: 1;
+    border-bottom: 3px solid;
+    padding-top: 20px;
+    text-align: center;
+    font-weight: bold;
+   
+    
+}
+
+.navbar {
+    display: inline-block;
+}
+
+li {
+    display: inline-block;
+    height: 100%;
+    margin-left : 50px; 
+    margin-right: 50px;
+}
+.con{
+    width: 960px;
+    position: relative;
+    margin: 30px auto;
+    background-color: rgb(112,111,111);
+    padding-bottom: 5px;
+}
+
+
+.telkom img{
+    width: 90px;
+    height: 90px;
+    float: right;
+    position: absolute;
+    right: 10px;
+    top:10px;
+}
+
+.head{
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.head .kotakatas .judul{
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+
+.navbar li a{
+    display: inline-block;
+    /* padding-top: 10px; */
+    padding-bottom: 13px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #ff2442;
+    text-decoration: none;
+    color: #ffb830;
+    height: 5px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.navbar li a:hover{
+    background-color: rgb(112,111,111);
+    color:black;
+    
+
+}
+
+.topbar a:active{
+    color: chocolate;
+}
+
+.hero{
+ height: 340px;
+ background-image: url(rakha.jpeg);
+ background-size:contain;
+
+ border-top: 5px solid rgb(0,0,0);
+ border-bottom: 5px solid rgb(0,0,0);
+
+}
+
+.isi{
+    padding: 10px;
+}
+
+.main{
+    width: 600px;
+    padding:20px;
+    box-sizing: border-box;
+    float: left;
+}
+.main h2{
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: -10px;
+    padding-bottom: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.main .penulis{
+    font-size: 11px;
+    text-decoration: none;
+}
+
+.main p{
+    text-indent: 40px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.sidebar{
+    float: right;
+    width: 300px;
+    padding: 20px;
+}
+
+.sidebar h3{
+    font-weight: bold;
+    color: black;
+}
+
+.sidebar img{
+    height: 150px;
+    float: left;
+    padding-right: 15px;
+}
+
+.sidebar p{
+    font: 12px/18px arial;
+    text-align: justify;
+}
+
+.sidebar .firstframe{
+    font-size: 12px;
+    text-align: right;
+
+}
+
+.sidebar .lastiframe{
+    font-size: 12px;
+    text-align: right;
+ 
+}
+
+
+.firstframe{
+    margin-top: 20px;
+}
+.lastiframe{
+    margin-top: 20px;
+}
+
+
+.footer .copy{
+    
+    padding: 15px;
+    font-size: 14px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.footer{
+    height: 40px;
+    background-color: black;
+}
+
+
+/* microclearfix */
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
